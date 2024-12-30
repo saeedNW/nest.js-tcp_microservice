@@ -21,6 +21,6 @@ async function bootstrap() {
 	app.useGlobalFilters(new ServiceExceptionFilter());
 
 	await app.listen();
-	console.log(`User service is running on ${process.env.TASK_SERVICE_URL}`);
+	console.log(`Task service is running on ${process.env.TASK_SERVICE_URL}`);
 }
 bootstrap();
